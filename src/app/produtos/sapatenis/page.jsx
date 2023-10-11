@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Sapatenis() {
     return(
@@ -14,6 +15,10 @@ export default function Sapatenis() {
             </div>
 
             <p><Link href='/'>Voltar...</Link></p>
+
+            <figure>
+                <Image src="/sapatenis.jpg" alt="sapatenis" width={320} height={320}></Image>
+            </figure>
         </div>
     )
 }

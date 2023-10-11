@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Tenis() {
     return(
@@ -14,6 +15,9 @@ export default function Tenis() {
             </div>
 
             <p><Link href='/'>Voltar...</Link></p>
+
+            <Image src="/tenis.jpg" alt="sandalia" width={320} height={320}></Image>
+
         </div>
     )
 }

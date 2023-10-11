@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Sandalia() {
     return(
@@ -14,6 +15,9 @@ export default function Sandalia() {
             </div>
 
             <p><Link href='/'>Voltar...</Link></p>
+
+            <Image src="/sandalia.jpg" alt="sandalia" width={320} height={320}></Image>
+
         </div>
     )
 }
