@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-export default function ProdutosSlug({params}) {
-    return (
-        <div>
-            <h1>Produto: {params.slug}</h1>
-        </div>
-    )
+export default function ProdutoSlug({params}) {
+  return (
+    <div>
+        <h1>Produto: {params.slug}</h1>
+    </div>
+  )
 }

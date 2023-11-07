@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -6,12 +7,14 @@ export default function Home() {
       <h1>HOME</h1>
 
       <div>
-        <ul>
-          <li><Link href='/produtos/tenis'>TÊNIS</Link></li>
-          <li><Link href='/produtos/sapatenis'>SAPATÊNIS</Link></li>
-          <li><Link href='/produtos/sandalia'>SANDALIA</Link></li>
-        </ul>
+
+          <figure>
+            <Image src="/sup-shelf_640.png" alt="Prateleira" width={320} height={320}/>
+          </figure>
+
       </div>
+
+
     </>
   )
 }
