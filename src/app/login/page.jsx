@@ -34,9 +34,9 @@ export default function Login() {
                 let status = response.json();
 
                 if(status){
-                    console.log("USUÁRIO VALIDADO COM SUCESSO!");
+                    setMsgStatus("Login realizado com SUCESSO!");
                 }else{
-                    console.log("USUÁRIO OU SENHA INVÁLIDOS!");
+                    setMsgStatus("USUÁRIO OU SENHA INVÁLIDOS!");
                 }
             }
         } catch (error) {
@@ -46,6 +46,8 @@ export default function Login() {
   return (
     <div>
         <h1>INFORMAÇÕES DOS USUÁRIOS</h1>
+
+            <h2>{setMsgStatus}</h2>
 
         <div>
             <form onSubmit={handleSubmit}>
