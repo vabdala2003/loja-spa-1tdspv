@@ -5,6 +5,18 @@
 
 @layer components {
 
+    .login-suc{
+        @apply bg-green-500 text-green-700 border border-green-700 text-center text-3xl p-5;
+    }
+
+    .login-err{
+        @apply bg-red-500 text-red-700 border border-red-700 text-center text-3xl p-5;
+    }
+
+    .login{
+        @apply hidden;
+    }
+
     .card-user{
         @apply flex flex-wrap;
 
