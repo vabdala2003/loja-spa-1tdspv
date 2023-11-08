@@ -14,6 +14,7 @@ export default function Cabecalho() {
           <li><Link href="/produtos/tenis">TÊNIS</Link></li>
           <li><Link href="/produtos/fazenda/loja/laticinios">QUEIJOS</Link></li>
           <li><Link href="/user-pages">GIT-USERS</Link></li>
+          <li><Link href="/user-view">USERS VIEW</Link></li>
         </ul>
       </nav>
       

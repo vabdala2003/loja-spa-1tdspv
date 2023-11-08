@@ -9,9 +9,9 @@ export async function GET(request, {params}) {
 
     const usuarios =  await JSON.parse(file);
     
-    if(id > 0 && id <= usuarios.usuarios.length){
+    if (id > 0 && id <= usuarios.usuarios.length) {
         return  NextResponse.json(usuarios.usuarios.find((user)=> user.id == id));
-    }else{
+    } else {
         return id == 0 ? NextResponse.json(usuarios.usuarios) : NextResponse.redirect("http://localhost:3000/error")
     }
 }
