@@ -75,8 +75,8 @@ export default function LoginUser() {
     }
 
   return (
-    <div>
-        <h1>INFORMAÇÕES DOS USUÁRIOS</h1>
+    <div className="loginDiv">
+        <h1>INFORMAÇÕES DO USUÁRIO</h1>
 
             <h2 className={classLoginMsg}>{msgstatus}</h2>
 

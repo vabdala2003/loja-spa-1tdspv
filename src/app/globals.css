@@ -1,77 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: rgb(220, 229, 232);
+}
 
-@layer components {
+.cabecalho {
+    background-color: rgb(161, 182, 208);
+    color: black;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 
-    .login-suc{
-        @apply bg-green-500 text-green-700 border border-green-700 text-center text-3xl p-5;
+    h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
     }
 
-    .login-err{
-        @apply bg-red-500 text-red-700 border border-red-700 text-center text-3xl p-5;
+    .menu ul {
+        list-style: none;
     }
 
-    .login{
-        @apply hidden;
+    .menu ul li {
+        display: inline;
+        margin: 0 10px;
     }
 
-    .card-user{
-        @apply flex flex-wrap;
-
-        & li{
-            @apply p-5 m-5  bg-red-400 w-40;
-
-            & img{
-                @apply block m-auto;
-            }
-
-            & figcaption{
-                @apply text-center font-bold text-xl;
-            }
-        }
+    .menu a {
+        color: black;
+        text-decoration: none;
     }
 
-    .menu {
-        & li {
-            @apply inline;
+    .menu a:hover {
+        text-decoration: underline;
+    }
+}
+  
+.rodape {
+    background-color: rgb(161, 182, 208);
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+}
 
-            & a {
-                @apply inline-block md:p-3 lg:p-6 sm:p-1 font-extrabold hover:bg-amber-600 hover:text-black transition-all duration-300 ease-in-out;
-            }
-        }
+.loginDiv {
+
+    margin: 0 auto;
+    width: 95%;
+    padding-top: 100px;
+
+    h1 {
+        margin-bottom: 10px;
+        text-align: center;
+        background-color: black;
+        color: white;
     }
 
-    .rodape {
-        @apply font-extrabold text-2xl text-white bg-slate-800 p-4 text-center fixed bottom-0 w-full;
+    legend {
+        margin-bottom: 10px;     
     }
 
-    .lat-prod-all{
-
-        & table{
-            @apply w-full text-center border border-blue-950;
-            & thead{
-                @apply bg-blue-950 text-white;
-
-                & th{
-                    @apply p-2 border border-white;
-                }
-            }
-
-            & tbody{
-                & tr{
-                    @apply bg-blue-950 text-white;
-
-                    & td{
-                        @apply p-2 border border-white;
-
-                        & img{
-                            @apply w-20 block m-auto;
-                        }
-                    }
-                }
-            }
-        }
+    fieldset {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 20px;
     }
 }

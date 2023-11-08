@@ -1,12 +1,20 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Calca() {
   return (
     <div>
-        <h1>Calça</h1>
+        <br/>
+        <h1>Nike Pants FitRun</h1><br/>
         <p><strong>Descrição: </strong></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta ipsa neque deserunt pariatur? Impedit porro necessitatibus, quia consequatur expedita itaque est facere omnis quod in numquam, ullam illo odit!</p>
-        <p><Link href="/">Voltar...</Link></p>
+        <p>Perfeita para correr em qualquer tempo, tem tecnologia adaptável, fresca no calor e quente no inverno.</p>
+        <Image
+        src="/calca.png"
+        alt="calca"
+        width={300}
+        height={200}
+        />
+        <br/><p><Link href="/">Voltar...</Link></p>
     </div>
   )
 }
