@@ -46,7 +46,6 @@ html {
     color: #000000;
     padding: 20px;
     text-align: center;
-    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -74,5 +73,55 @@ html {
         display: flex;
         justify-content: space-evenly;
         padding-bottom: 20px;
+    }
+}
+
+.userPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    table {
+        width: 95%;
+        margin: 0 auto
+    }
+
+    th {
+        border: solid black 1px;
+        background-color: rgb(161, 182, 208);
+    }
+
+    td {
+        border: solid black 1px;
+    }
+
+    td a {
+        text-decoration: none;
+        color: rgb(32, 89, 201);
+    }
+}
+
+.pagUser {
+    width: 100vw;
+    min-height: 500px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        padding: 5px;
+        height: 400px;
+        width: 400px;
+        border-radius: 5px;
+        background-color: white;
+    }
+    
+    div:hover {
+        padding: 10px;
+        transform: scale(110%);
+        transition: all .5s;
     }
 }
